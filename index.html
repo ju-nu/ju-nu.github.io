@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JU.NU – Bald da</title>
+  <meta name="description" content="JU.NU – Etwas Neues entsteht. Trag dich ein und erfahre als Erste*r, wenn wir starten." />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JU.NU – Bald da" />
+  <meta property="og:description" content="Etwas Neues entsteht. Trag dich ein und erfahre als Erste*r, wenn wir starten." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3Crect width='100%25' height='100%25' fill='url(%23g)'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial' font-size='92' font-weight='700' fill='white'%3EJU.NU%3C/text%3E%3C/svg%3E" />
+
+  <!-- Favicon (inline) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23a)'/%3E%3Ctext x='50' y='57' text-anchor='middle' font-family='Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial' font-size='44' font-weight='800' fill='white'%3EJU%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'] },
+          colors: {
+            primary: {
+              50: '#ecfeff', 100: '#cffafe', 200: '#a5f3fc', 300: '#67e8f9', 400: '#22d3ee',
+              500: '#06b6d4', 600: '#0891b2', 700: '#0e7490', 800: '#155e75', 900: '#164e63',
+            },
+          },
+          boxShadow: {
+            glow: '0 0 0 4px rgb(14 165 233 / 0.15), 0 0 40px 10px rgb(139 92 246 / 0.12)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { color-scheme: dark light; }
+    /* Subtle animated gradient background */
+    .bg-animated {
+      background: radial-gradient(1200px 800px at 10% 10%, rgba(14,165,233,.20), transparent 60%),
+                  radial-gradient(900px 600px at 90% 20%, rgba(139,92,246,.18), transparent 60%),
+                  radial-gradient(700px 500px at 30% 90%, rgba(34,197,94,.14), transparent 60%),
+                  #0b1220;
+      animation: float 16s linear infinite;
+      background-size: 120% 120%;
+    }
+    @keyframes float {
+      0% { background-position: 0% 0%, 100% 0%, 0% 100%; }
+      50% { background-position: 100% 50%, 0% 50%, 100% 50%; }
+      100% { background-position: 0% 0%, 100% 0%, 0% 100%; }
+    }
+
+    /* Glass card blur */
+    .glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+
+    /* Smooth fade-in */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .fade-up { animation: fadeUp .8s ease both; }
+    .fade-up-delay { animation: fadeUp 1s .1s ease both; }
+    .fade-up-delay2 { animation: fadeUp 1.2s .2s ease both; }
+    .fade-up-delay3 { animation: fadeUp 1.3s .25s ease both; }
+  </style>
+</head>
+<body class="min-h-screen font-sans text-white selection:bg-primary-400/50">
+  <main class="bg-animated min-h-screen flex items-center justify-center p-6">
+    <div class="relative z-10 w-full max-w-3xl">
+      <!-- Logo / Brand -->
+      <div class="flex items-center gap-3 fade-up">
+        <div class="h-10 w-10 rounded-2xl bg-gradient-to-br from-sky-500 to-violet-500 shadow-glow grid place-items-center font-extrabold">J</div>
+        <span class="text-xl md:text-2xl font-extrabold tracking-tight">JU.NU</span>
+      </div>
+
+      <!-- Card -->
+      <section class="mt-6 md:mt-8 rounded-3xl glass bg-white/5 border border-white/10 shadow-xl">
+        <div class="p-6 md:p-10">
+          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight fade-up" style="letter-spacing:-.02em">
+            Etwas Neues entsteht.
+          </h1>
+          <p class="mt-3 md:mt-4 text-white/80 text-base md:text-lg max-w-prose fade-up-delay">
+            Wir arbeiten mit Hochdruck an <span class="font-semibold">JU.NU</span> – minimal, klar und überraschend nützlich.
+            Trag dich ein und erfahre als Erste*r, wenn wir live gehen.
+          </p>
+
+          <!-- Email capture (frontend only) -->
+          <form class="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-3 fade-up-delay2" onsubmit="event.preventDefault(); subscribe();">
+            <label class="sr-only" for="email">E‑Mail-Adresse</label>
+            <input id="email" name="email" type="email" required placeholder="E‑Mail-Adresse" autocomplete="email"
+                   class="w-full rounded-2xl border border-white/15 bg-white/10/50 px-4 py-3 md:py-4 text-base placeholder-white/50 focus:outline-none focus:ring-4 focus:ring-sky-500/30 focus:border-white/30" />
+            <button type="submit" class="rounded-2xl px-5 py-3 md:py-4 font-semibold bg-gradient-to-r from-sky-500 to-violet-500 hover:shadow-glow transition-shadow">
+              Benachrichtige mich
+            </button>
+          </form>
+
+          <!-- Micro copy -->
+          <p class="mt-3 text-xs text-white/60 fade-up-delay3">
+            Wir respektieren deine Zeit und Privatsphäre.
+            Kein Spam – nur ein kurzer Ping zum Start. ✨
+          </p>
+
+          <!-- Decorative progress hint -->
+          <div class="mt-8">
+            <div class="flex items-center justify-between text-sm text-white/60 mb-2">
+              <span>Fortschritt</span>
+              <span id="progressLabel">70%</span>
+            </div>
+            <div class="h-2 w-full rounded-full bg-white/10 overflow-hidden">
+              <div id="progressBar" class="h-2 rounded-full bg-gradient-to-r from-sky-500 to-violet-500" style="width:70%"></div>
+            </div>
+          </div>
+
+          <!-- Social & Kontakt -->
+          <div class="mt-8 flex flex-wrap items-center gap-4 text-white/70">
+            <a class="inline-flex items-center gap-2 hover:text-white transition" href="#" aria-label="Instagram (bald)">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3zm11 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+              Instagram
+            </a>
+            <a class="inline-flex items-center gap-2 hover:text-white transition" href="#" aria-label="LinkedIn (bald)">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-6.93c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.79-2.65 3.64V24H8z"/></svg>
+              LinkedIn
+            </a>
+            <span class="inline-flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0l8 7 8-7H4zm16 2.236l-8 7-8-7V20h16V6.236z"/></svg>
+              <a class="hover:text-white transition" href="mailto:kontakt@ju.nu">kontakt@ju.nu</a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-6 md:mt-8 flex flex-wrap items-center justify-between text-xs text-white/60 fade-up-delay3">
+        <p>© <span id="year"></span> JU.NU. Alle Rechte vorbehalten.</p>
+        <nav class="flex items-center gap-4">
+          <a href="#" class="hover:text-white">Impressum</a>
+          <a href="#" class="hover:text-white">Datenschutz</a>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- Ambient shapes -->
+    <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <svg class="absolute -top-24 -right-24 opacity-30 blur-3xl" width="400" height="400" viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#0ea5e9" />
+            <stop offset="1" stop-color="#8b5cf6" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#g1)" d="M40.8,-62.1C52.9,-55.6,62.7,-44,69.9,-30.4C77.1,-16.8,81.6,-1.2,79.5,13.8C77.4,28.7,68.7,43,56.7,53.1C44.6,63.2,29.2,69.1,13.7,72.2C-1.8,75.3,-17.9,75.6,-33.1,70.7C-48.3,65.8,-62.6,55.6,-70.1,41.7C-77.6,27.8,-78.2,10.3,-75.4,-5.7C-72.7,-21.8,-66.8,-36.8,-56.2,-44.4C-45.7,-52,-30.4,-52.7,-16.6,-58.8C-2.8,-65,9.7,-76,21.1,-77.5C32.6,-78.9,43.1,-70.9,40.8,-62.1Z" transform="translate(100 100)" />
+      </svg>
+      <svg class="absolute -bottom-28 -left-28 opacity-25 blur-3xl" width="420" height="420" viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#22c55e" />
+            <stop offset="1" stop-color="#0ea5e9" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#g2)" d="M35.4,-51.6C46.7,-44.8,57.1,-36.3,64.4,-25.4C71.6,-14.5,75.8,-1.2,73.2,11.2C70.5,23.7,61.1,35.2,50.1,44.2C39.1,53.2,26.6,59.7,13.2,62.2C-0.1,64.7,-13.5,63.2,-26.4,58.4C-39.3,53.6,-51.6,45.5,-56.9,34.4C-62.3,23.2,-60.6,9,-58.7,-5C-56.8,-19.1,-54.7,-33.6,-46.6,-42.9C-38.6,-52.2,-24.5,-56.3,-11.8,-58.2C0.9,-60.1,18.4,-59.9,35.4,-51.6Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+  </main>
+
+  <script>
+    // Dynamisches Jahr im Footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Fake-Progress zum "Atmen" (rein visuell)
+    (function gentlePulse(){
+      const bar = document.getElementById('progressBar');
+      const label = document.getElementById('progressLabel');
+      let p = 70;
+      setInterval(() => {
+        const delta = (Math.sin(Date.now()/1200)+1)/2 * 6 - 3; // -3..+3
+        p = Math.min(95, Math.max(60, p + delta));
+        bar.style.width = p.toFixed(0) + '%';
+        label.textContent = p.toFixed(0) + '%';
+      }, 900);
+    })();
+
+    // Simple Frontend-"Newsletter" (ohne Backend)
+    function subscribe(){
+      const input = document.getElementById('email');
+      if(!input.checkValidity()){
+        input.reportValidity();
+        return;
+      }
+      const mail = input.value.trim();
+      // Hier könnt ihr euer echtes Backend einbinden (z.B. via fetch POST)
+      // fetch('/api/subscribe', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: mail})})
+      //   .then(r=>r.ok ? r.json() : Promise.reject(r))
+      //   .then(()=> notify('Danke! Wir melden uns bald.'))
+      //   .catch(()=> notify('Ups – da ging was schief. Probier es später erneut.'))
+      // Für die Demo zeigen wir einfach eine Benachrichtigung und leeren das Feld:
+      notify('Danke! Wir melden uns bald bei dir.');
+      input.value='';
+    }
+
+    function notify(text){
+      const n = document.createElement('div');
+      n.setAttribute('role','status');
+      n.className = 'fixed inset-x-0 top-4 mx-auto w-fit max-w-[90vw] rounded-2xl bg-white/90 text-slate-900 px-4 py-3 shadow-lg ring-1 ring-black/5';
+      n.textContent = text;
+      document.body.appendChild(n);
+      setTimeout(()=> n.remove(), 2800);
+    }
+  </script>
+</body>
+</html>
